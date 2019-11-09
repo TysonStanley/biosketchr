@@ -1,0 +1,4 @@
+name: "NIH Biosketch"
+description: >
+ Template for creating an NIH biosketch.
+create_dir: true

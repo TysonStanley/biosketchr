@@ -1,0 +1,82 @@
+%% For Use With NIH Biosketch LaTeX Class
+%% Added to RMarkdown by Tyson S. Barrett, PhD
+
+% Document class and options
+\documentclass{nihbiosketch}
+
+% Pandoc header
+$for(header-includes)$
+  $header-includes$
+$endfor$
+
+$preamble$
+
+
+\name{$name$}
+\eracommons{$eracommons$}
+\position{$position$}
+
+
+\begin{document}
+
+$if(education)$
+  \begin{education}
+  $for(education)$
+    $education.school$ & $education.degree$ & $education.date$ & $education.field$ \\
+  $endfor$
+  \end{education}
+$endif$
+
+
+
+$body$
+
+
+
+$if(myBibliography)$
+  \subsection*{Complete List of Published Work in MyBibliography:} 
+  \url{$myBibliography$}
+$endif$ 
+
+$if(researchsupport)$
+  \section{Research Support}
+  
+    $if(researchsupport.ongoing)$
+    \subsection*{Ongoing Research Support}
+    
+      $for(researchsupport.ongoing)$
+      
+      \grantinfo{$researchsupport.ongoing.grant$}{$researchsupport.ongoing.pi$}{$researchsupport.ongoing.dates$}
+      {$researchsupport.ongoing.title$}
+      {$researchsupport.ongoing.description$}
+      {Role: $researchsupport.ongoing.role$}
+      
+      \bigskip
+      $endfor$
+    
+    $endif$
+  
+  
+  $if(researchsupport.completed)$
+  \subsection*{Completed Research Support}
+  
+    $for(researchsupport.completed)$
+      
+      \grantinfo{$researchsupport.completed.grant$}{$researchsupport.completed.pi$}{$researchsupport.completed.dates$}
+      {$researchsupport.completed.title$}
+      {$researchsupport.completed.description$}
+      {Role: $researchsupport.completed.role$}
+      
+      \bigskip
+    $endfor$
+  
+  $endif$
+
+$endif$
+
+
+$for(include-after)$
+  $include-after$
+$endfor$
+
+\end{document}

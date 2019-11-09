@@ -1,0 +1,20 @@
+Package: biosketchr
+Type: Package
+Title: biosketchr
+Version: 0.1.0
+Authors@R: c(person("Tyson S.", "Barrett",  
+                    role=c("aut","cre"), 
+                    email = "t.barrett@aggiemail.usu.edu", 
+                    comment = c(ORCID = "0000-0002-2137-1391")),
+ 	         person("Daniel", "Anderson", role=c("aut")))
+Maintainer: Tyson S. Barrett <t.barrett@aggiemail.usu.edu>
+Description: Provides the template and functions that make writing a dissertation
+    at Utah State University easier.
+Imports: 
+    rmarkdown,
+    knitr,
+    yaml
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1

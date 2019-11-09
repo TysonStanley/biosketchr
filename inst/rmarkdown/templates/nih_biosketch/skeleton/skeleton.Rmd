@@ -1,0 +1,117 @@
+---
+name: "Your Name"
+eracommons: "IDstuff"
+position: "Researcher"
+myBibliography: "url"
+education:
+  - degree: "BS"
+    school: "University State"
+    date: "5/2000"
+    field: "Psychology"
+  - degree: "PhD"
+    school: "University State"
+    date: "5/2005"
+    field: "Psychology"
+researchsupport:
+  ongoing:
+    - grant: "NIH R01 Numbers"
+      pi: "You Are"
+      dates: "Still Happening"
+      title: "Life Changing Grant"
+      description: "This is the stuff we are doing"
+      role: "PI"
+    - grant: "NIH R01 Numbers 2"
+      pi: "You Are Also"
+      dates: "Still Happening Also"
+      title: "Life Changing Grant Also"
+      description: "This is the stuff we are also doing"
+      role: "PI"
+  completed:
+    - grant: "NIH R01 Numbers"
+      pi: "You Were"
+      dates: "Over"
+      title: "Life Changing Grant Now Over"
+      description: "This is the stuff we were doing"
+      role: "PI"
+output:
+  biosketchr::nih_biosketch:
+    latex_engine: xelatex
+    keep_tex: yes
+    pandoc_args: [ "--csl", "apa6.csl" ]
+---
+
+```{r global_options, include=FALSE}
+## This saves you from having to do this for every chunk
+knitr::opts_chunk$set(fig.path = 'figures/',
+                      echo = FALSE, 
+                      warning = FALSE, 
+                      message = FALSE)
+```
+
+<!--
+The structure of this skeleton should stay the same. Add your specifics :) Notably, \fullcite{} allows the full citation from a bib file entry (as far as I can tell there is no pandoc equivalent yet).
+-->
+
+
+# Personal Statement {-}
+
+\begin{statement}
+
+Your statement about your qualifications for the proposal goes here. Include up-to-four citations related to the statement.
+
+1. \fullcite{RCoreTeam}
+2. \fullcite{Rstudio}
+3. \fullcite{biosketchr}
+4. \fullcite{nihbiosketch}
+
+\end{statement}
+
+
+# Positions and Honors {-}
+
+## Positions and Employment {-}
+
+\begin{datetbl}
+1998--2000  & Fellow, Somewhere Neat \\
+2000--2002  & Lecturer, Department of Psychology, A University, Somewhere Cool \\
+2002--2005  & Assistant Research Professor, Department of Psychology, University State, Somewhere Fantastic \\
+2007--      & Associate Research Professor, Department of Psychology, University State, Somewhere Fantastic \\
+\end{datetbl}
+
+## Other Experience and Professional Memberships {-}
+
+\begin{datetbl}
+2000--      & Member, American Psychological Association \\
+2000--      & Member, Gerontological Society of America \\
+\end{datetbl}
+
+## Honors {-}
+
+\begin{datetbl}
+2003        & Outstanding Person, University State, Somewhere Fantastic \\
+2004        & Excellence in Teaching, University State, Somewhere Fantastic \\
+2009        & Award for Best of Something, A University, Somewhere Cool \\
+\end{datetbl}
+
+
+# Contribution to Science {-}
+
+1. Paragraph of contribution number 1. This should include a narrative about one of your main research lines. Below, cite up to four publications stemming from this contribution.
+    1. \fullcite{RCoreTeam}
+    2. \fullcite{Rstudio}
+    3. \fullcite{biosketchr}
+    4. \fullcite{nihbiosketch}
+
+
+2. Paragraph of contribution number 2. This should include a narrative about one of your main research lines. Below, cite up to four publications stemming from this contribution.
+    1. \fullcite{RCoreTeam}
+    2. \fullcite{Rstudio}
+    3. \fullcite{biosketchr}
+    4. \fullcite{nihbiosketch}
+
+<!--
+Can include more contributions like the ones above
+-->
+
+
+
