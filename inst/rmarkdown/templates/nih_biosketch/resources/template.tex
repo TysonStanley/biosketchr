@@ -23,6 +23,11 @@ $preamble$
 
 \begin{document}
 
+$if(bibliography)$
+  \nobibliography{$for(bibliography)$$bibliography$$sep$,$endfor$}
+$endif$
+
+
 $if(education)$
   \begin{education}
   $for(education)$
@@ -76,10 +81,6 @@ $if(researchsupport)$
   
   $endif$
 
-$endif$
-
-$if(bibliography)$
-  \nobibliography{$for(bibliography)$$bibliography$$sep$,$endfor$}
 $endif$
 
 $for(include-after)$
