@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# `biosketchr` `v0.1.1` <img src="inst/biosketchr_hex.png" align="right" width="30%" height="30%"/>
+# `biosketchr` `v0.1.2` <img src="inst/biosketchr_hex.png" align="right" width="30%" height="30%"/>
 
 The goal of `biosketchr` is to make two aspects of creating a Biosketch
 better:
@@ -33,17 +33,20 @@ file.
 
 <img src="inst/select_template.png" align="center" width="50%" height="50%"/>
 
-The `.Rmd` file will open automatically showing you this
-template.
-
-<img src="inst/skeleton_rmd.png" align="center" width="50%" height="50%"/>
+The `.Rmd` file will open automatically showing you this template.
 
 This is where you’ll do all the editing, writing your statement, fill in
 education, etc. You’ll also want to edit the `yourbibfile.bib` file with
 your citations that you want to include in the biosketch.
 
 When you `knit` this, it will produce a PDF file in the same folder that
-is formatted like the appropriate biosketch.
+is formatted like the appropriate biosketch. This PDF will look
+something like the
+following:
+
+<img src="inst/pdf_output_example.png" align="center" width="50%" height="50%"/>
+
+Yay\! Biosketching with RMarkdown\!
 
 ## Note
 
