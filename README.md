@@ -33,7 +33,10 @@ file.
 
 <img src="inst/select_template.png" align="center" width="50%" height="50%"/>
 
-The `.Rmd` file will open automatically showing you this template.
+The `.Rmd` file will open automatically showing you this
+template.
+
+<img src="inst/skeleton_rmd.png" align="center" width="50%" height="50%"/>
 
 This is where you’ll do all the editing, writing your statement, fill in
 education, etc. You’ll also want to edit the `yourbibfile.bib` file with

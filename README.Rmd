@@ -43,6 +43,7 @@ To start, you'll want to select the appropriate template (currently only the NIH
 
 The `.Rmd` file will open automatically showing you this template.
 
+<img src="inst/skeleton_rmd.png" align="center" width="50%" height="50%"/>
 
 This is where you'll do all the editing, writing your statement, fill in education, etc. You'll also want to edit the `yourbibfile.bib` file with your citations that you want to include in the biosketch.
 
@@ -51,6 +52,7 @@ When you `knit` this, it will produce a PDF file in the same folder that is form
 <img src="inst/pdf_output_example.png" align="center" width="50%" height="50%"/>
 
 Yay! Biosketching with RMarkdown!
+
 
 ## Note
 
