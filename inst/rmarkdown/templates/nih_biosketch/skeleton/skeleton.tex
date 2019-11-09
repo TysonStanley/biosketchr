@@ -1,0 +1,163 @@
+%% For Use With NIH Biosketch LaTeX Class
+%% Added to RMarkdown by Tyson S. Barrett, PhD
+
+% Document class and options
+\documentclass{nihbiosketch}
+\usepackage{natbib}
+\usepackage{bibentry}
+\bibliographystyle{apalike}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Pandoc header
+
+
+
+
+\name{Your Name}
+\eracommons{IDstuff}
+\position{Researcher}
+
+
+\begin{document}
+
+  \begin{education}
+      University State & BS & 5/2000 & Psychology \\
+      University State & PhD & 5/2005 & Psychology \\
+    \end{education}
+
+
+
+\hypertarget{personal-statement}{%
+\section*{Personal Statement}\label{personal-statement}}
+\addcontentsline{toc}{section}{Personal Statement}
+
+\begin{statement}
+
+Your statement about your qualifications for the proposal goes here. Include up-to-four citations related to the statement. \ipsum
+
+  1. \fullcite{RCoreTeam}
+  2. \fullcite{Rstudio}
+  3. \fullcite{biosketchr}
+  4. \fullcite{nihbiosketch}
+
+\end{statement}
+
+\hypertarget{positions-and-honors}{%
+\section*{Positions and Honors}\label{positions-and-honors}}
+\addcontentsline{toc}{section}{Positions and Honors}
+
+\hypertarget{positions-and-employment}{%
+\subsection*{Positions and Employment}\label{positions-and-employment}}
+\addcontentsline{toc}{subsection}{Positions and Employment}
+
+\begin{datetbl}
+1998--2000  & Fellow, Somewhere Neat \\
+2000--2002  & Lecturer, Department of Psychology, A University, Somewhere Cool \\
+2002--2005  & Assistant Research Professor, Department of Psychology, University State, Somewhere Fantastic \\
+2007--      & Associate Research Professor, Department of Psychology, University State, Somewhere Fantastic \\
+\end{datetbl}
+
+\hypertarget{other-experience-and-professional-memberships}{%
+\subsection*{Other Experience and Professional
+Memberships}\label{other-experience-and-professional-memberships}}
+\addcontentsline{toc}{subsection}{Other Experience and Professional
+Memberships}
+
+\begin{datetbl}
+2000--      & Member, American Psychological Association \\
+2000--      & Member, Gerontological Society of America \\
+\end{datetbl}
+
+\hypertarget{honors}{%
+\subsection*{Honors}\label{honors}}
+\addcontentsline{toc}{subsection}{Honors}
+
+\begin{datetbl}
+2003        & Outstanding Person, University State, Somewhere Fantastic \\
+2004        & Excellence in Teaching, University State, Somewhere Fantastic \\
+2009        & Award for Best of Something, A University, Somewhere Cool \\
+\end{datetbl}
+
+\hypertarget{contribution-to-science}{%
+\section*{Contribution to Science}\label{contribution-to-science}}
+\addcontentsline{toc}{section}{Contribution to Science}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Paragraph of contribution number 1. This should include a narrative
+  about one of your main research lines. Below, cite up to four
+  publications stemming from this contribution.
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \item
+    \fullcite{RCoreTeam}
+  \item
+    \fullcite{Rstudio}
+  \item
+    \fullcite{biosketchr}
+  \item
+    \fullcite{nihbiosketch}
+  \end{enumerate}
+\item
+  Paragraph of contribution number 2. This should include a narrative
+  about one of your main research lines. Below, cite up to four
+  publications stemming from this contribution.
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \item
+    \fullcite{RCoreTeam}
+  \item
+    \fullcite{Rstudio}
+  \item
+    \fullcite{biosketchr}
+  \item
+    \fullcite{nihbiosketch}
+  \end{enumerate}
+\end{enumerate}
+
+
+
+  \subsection*{Complete List of Published Work in MyBibliography:} 
+  \url{url}
+
+  \section{Research Support}
+  
+        \subsection*{Ongoing Research Support}
+    
+            
+      \grantinfo{NIH R01 Numbers}{You Are}{Still Happening}
+      {Life Changing Grant}
+      {This is the stuff we are doing}
+      {Role: PI}
+      
+      \bigskip
+            
+      \grantinfo{NIH R01 Numbers 2}{You Are Also}{Still Happening Also}
+      {Life Changing Grant Also}
+      {This is the stuff we are also doing}
+      {Role: PI}
+      
+      \bigskip
+          
+      
+  
+    \subsection*{Completed Research Support}
+  
+          
+      \grantinfo{NIH R01 Numbers}{You Were}{Over}
+      {Life Changing Grant Now Over}
+      {This is the stuff we were doing}
+      {Role: PI}
+      
+      \bigskip
+      
+  
+
+  \bibliography{yourbibfile.bib}
+
+
+\end{document}

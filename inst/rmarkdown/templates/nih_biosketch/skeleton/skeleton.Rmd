@@ -37,7 +37,8 @@ output:
   biosketchr::nih_biosketch:
     latex_engine: xelatex
     keep_tex: yes
-    pandoc_args: [ "--csl", "apa6.csl" ]
+bibliography: yourbibfile.bib
+bibliographystyle: apalike
 ---
 
 ```{r global_options, include=FALSE}
@@ -57,12 +58,15 @@ The structure of this skeleton should stay the same. Add your specifics :) Notab
 
 \begin{statement}
 
-Your statement about your qualifications for the proposal goes here. Include up-to-four citations related to the statement.
+Your statement about your qualifications for the proposal goes here. Include up-to-four citations related to the statement (either using the `\bibentry` command as shown below with the appropriate key from the `.bib` file or manually entered). This can often include any previous products from collaborations between the research team that is relevant to the current proposal. Ultimately, this is a space to show that you are competent capable of completing the proposed project. Feel free to erase all of this filler text.
 
-  1. \fullcite{RCoreTeam}
-  2. \fullcite{Rstudio}
-  3. \fullcite{biosketchr}
-  4. \fullcite{nihbiosketch}
+  1. \bibentry{RCoreTeam}
+  
+  2. \bibentry{Rstudio}
+  
+  3. \bibentry{biosketchr}
+  
+  4. \bibentry{nihbiosketch}
 
 \end{statement}
 
@@ -96,18 +100,18 @@ Your statement about your qualifications for the proposal goes here. Include up-
 
 # Contribution to Science {-}
 
-1. Paragraph of contribution number 1. This should include a narrative about one of your main research lines. Below, cite up to four publications stemming from this contribution.
-    1. \fullcite{RCoreTeam}
-    2. \fullcite{Rstudio}
-    3. \fullcite{biosketchr}
-    4. \fullcite{nihbiosketch}
+1. Paragraph of contribution number 1. This should include a narrative about one of your main research lines. Below, cite up to four publications stemming from this contribution. Feel free to erase all of this filler text.
+    1. \bibentry{RCoreTeam}
+    2. \bibentry{Rstudio}
+    3. \bibentry{biosketchr}
+    4. \bibentry{nihbiosketch}
 
 
-2. Paragraph of contribution number 2. This should include a narrative about one of your main research lines. Below, cite up to four publications stemming from this contribution.
-    1. \fullcite{RCoreTeam}
-    2. \fullcite{Rstudio}
-    3. \fullcite{biosketchr}
-    4. \fullcite{nihbiosketch}
+2. Paragraph of contribution number 2. This should include a narrative about one of your main research lines. Below, cite up to four publications stemming from this contribution. Feel free to erase all of this filler text.
+    1. \bibentry{RCoreTeam}
+    2. \bibentry{Rstudio}
+    3. \bibentry{biosketchr}
+    4. \bibentry{nihbiosketch}
 
 <!--
 Can include more contributions like the ones above

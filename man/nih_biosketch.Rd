@@ -31,6 +31,8 @@ Possible arguments for the YAML header are:
   \item \code{position} Description of your research position
   \item \code{education} Your education attainment (include any Bachelors, Masters, Doctorate, Postdoc). Several items are required for the education: 1) degree, 2) school, 3) date, and 4) field.
   \item \code{researchsupport} Both \code{ongoing} and \code{completed} research support received. Several items are required for the research support for both ongoing and completed: 1) grant, 2) PI, 3) dates, 4) title, 5) description, and 6) role.
+  \item \code{bibliography} The name of the bib file
+  \item \code{bibliographystyle} The bib style
   \item \code{output} Should be one of the formats from \code{biosketchr}
   }
 }
