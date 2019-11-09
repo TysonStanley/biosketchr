@@ -59,10 +59,10 @@ The structure of this skeleton should stay the same. Add your specifics :) Notab
 
 Your statement about your qualifications for the proposal goes here. Include up-to-four citations related to the statement.
 
-1. \fullcite{RCoreTeam}
-2. \fullcite{Rstudio}
-3. \fullcite{biosketchr}
-4. \fullcite{nihbiosketch}
+  1. \fullcite{RCoreTeam}
+  2. \fullcite{Rstudio}
+  3. \fullcite{biosketchr}
+  4. \fullcite{nihbiosketch}
 
 \end{statement}
 
