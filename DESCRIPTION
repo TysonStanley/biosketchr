@@ -8,8 +8,7 @@ Authors@R: c(person("Tyson S.", "Barrett",
                     comment = c(ORCID = "0000-0002-2137-1391")),
  	         person("Daniel", "Anderson", role=c("aut")))
 Maintainer: Tyson S. Barrett <t.barrett@aggiemail.usu.edu>
-Description: Provides the template and functions that make writing a dissertation
-    at Utah State University easier.
+Description: Provides the template and functions that make creating a Biosketch easier.
 Imports: 
     rmarkdown,
     knitr,
