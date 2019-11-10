@@ -6,6 +6,8 @@
 \alias{biosketchr-package}
 \title{biosketchr: biosketchr}
 \description{
+\if{html}{\figure{logo.png}{options: align='right'}}
+
 Provides the template and functions that make creating a Biosketch easier.
 }
 \author{
