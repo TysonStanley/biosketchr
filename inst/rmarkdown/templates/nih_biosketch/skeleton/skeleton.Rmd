@@ -122,9 +122,10 @@ make_numbered_citations("RCoreTeam", "RStudio", "biosketchr", "nihbiosketch")
 make_numbered_citations("RCoreTeam", "RStudio", "biosketchr", "nihbiosketch")
 ```
 
-<!--
-Can include more contributions like the ones above
--->
+
 
 \end{enumerate}
 
+<!--
+Can include more contributions like the ones above, before the `\end{enumerate}`
+-->
