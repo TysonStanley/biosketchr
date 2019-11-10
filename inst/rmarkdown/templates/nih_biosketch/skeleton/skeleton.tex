@@ -20,12 +20,17 @@
 
 \begin{document}
 
+
+
+  \nobibliography{yourbibfile.bib}
+
+
   \begin{education}
       University State & BS & 5/2000 & Psychology \\
       University State & PhD & 5/2005 & Psychology \\
     \end{education}
 
-
+\nobibliography*
 
 \hypertarget{personal-statement}{%
 \section*{Personal Statement}\label{personal-statement}}
@@ -33,12 +38,15 @@
 
 \begin{statement}
 
-Your statement about your qualifications for the proposal goes here. Include up-to-four citations related to the statement. \ipsum
+Your statement about your qualifications for the proposal goes here. Include up-to-four citations related to the statement (either using the `\bibentry` command as shown below with the appropriate key from the `.bib` file or manually entered). This can often include any previous products from collaborations between the research team that is relevant to the current proposal. Ultimately, this is a space to show that you are competent capable of completing the proposed project. Feel free to erase all of this filler text.
 
-  1. \fullcite{RCoreTeam}
-  2. \fullcite{Rstudio}
-  3. \fullcite{biosketchr}
-  4. \fullcite{nihbiosketch}
+  1. \bibentry{RCoreTeam}
+  
+  2. \bibentry{Rstudio}
+  
+  3. \bibentry{biosketchr}
+  
+  4. \bibentry{nihbiosketch}
 
 \end{statement}
 
@@ -51,10 +59,10 @@ Your statement about your qualifications for the proposal goes here. Include up-
 \addcontentsline{toc}{subsection}{Positions and Employment}
 
 \begin{datetbl}
-1998--2000  & Fellow, Somewhere Neat \\
-2000--2002  & Lecturer, Department of Psychology, A University, Somewhere Cool \\
-2002--2005  & Assistant Research Professor, Department of Psychology, University State, Somewhere Fantastic \\
-2007--      & Associate Research Professor, Department of Psychology, University State, Somewhere Fantastic \\
+2007-- & Associate Research Professor, Department of Psychology, University State, Somewhere Fantastic \\
+2002--2005 & Assistant Research Professor, Department of Psychology, University State, Somewhere Fantastic \\
+2000--2002 & Lecturer, Department of Psychology, A University, Somewhere Cool \\
+1998--2000 & Fellow, Somewhere Neat \\
 \end{datetbl}
 
 \hypertarget{other-experience-and-professional-memberships}{%
@@ -64,8 +72,8 @@ Memberships}\label{other-experience-and-professional-memberships}}
 Memberships}
 
 \begin{datetbl}
-2000--      & Member, American Psychological Association \\
-2000--      & Member, Gerontological Society of America \\
+2000-- & Member, Gerontological Society of America \\
+2000-- & Member, American Psychological Association \\
 \end{datetbl}
 
 \hypertarget{honors}{%
@@ -73,9 +81,9 @@ Memberships}
 \addcontentsline{toc}{subsection}{Honors}
 
 \begin{datetbl}
-2003        & Outstanding Person, University State, Somewhere Fantastic \\
-2004        & Excellence in Teaching, University State, Somewhere Fantastic \\
-2009        & Award for Best of Something, A University, Somewhere Cool \\
+2009 & Award for Best of Something, A University, Somewhere Cool \\
+2004 & Excellence in Teaching, University State, Somewhere Fantastic \\
+2003 & Outstanding Person, University State, Somewhere Fantastic \\
 \end{datetbl}
 
 \hypertarget{contribution-to-science}{%
@@ -88,34 +96,36 @@ Memberships}
 \item
   Paragraph of contribution number 1. This should include a narrative
   about one of your main research lines. Below, cite up to four
-  publications stemming from this contribution.
+  publications stemming from this contribution. Feel free to erase all
+  of this filler text.
 
   \begin{enumerate}
   \def\labelenumii{\arabic{enumii}.}
   \item
-    \fullcite{RCoreTeam}
+    \bibentry{RCoreTeam}
   \item
-    \fullcite{Rstudio}
+    \bibentry{Rstudio}
   \item
-    \fullcite{biosketchr}
+    \bibentry{biosketchr}
   \item
-    \fullcite{nihbiosketch}
+    \bibentry{nihbiosketch}
   \end{enumerate}
 \item
   Paragraph of contribution number 2. This should include a narrative
   about one of your main research lines. Below, cite up to four
-  publications stemming from this contribution.
+  publications stemming from this contribution. Feel free to erase all
+  of this filler text.
 
   \begin{enumerate}
   \def\labelenumii{\arabic{enumii}.}
   \item
-    \fullcite{RCoreTeam}
+    \bibentry{RCoreTeam}
   \item
-    \fullcite{Rstudio}
+    \bibentry{Rstudio}
   \item
-    \fullcite{biosketchr}
+    \bibentry{biosketchr}
   \item
-    \fullcite{nihbiosketch}
+    \bibentry{nihbiosketch}
   \end{enumerate}
 \end{enumerate}
 
@@ -157,7 +167,6 @@ Memberships}
       
   
 
-  \bibliography{yourbibfile.bib}
 
 
 \end{document}

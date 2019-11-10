@@ -32,7 +32,7 @@
 #' @export
 nih_biosketch <- function(..., highlight = NULL, citation_package = "none") {
 
-  # Find template in dissertateUSU
+  # Find template in biosketchr
   template_file <-
     system.file("rmarkdown", "templates", "nih_biosketch",
                 file.path("resources", "template.tex"),
@@ -58,5 +58,36 @@ nih_biosketch <- function(..., highlight = NULL, citation_package = "none") {
 
   # Return pre-rendered output
   pdf
+}
+
+#' Format positions data into a table
+#'
+#' Transforms a standard R data frame into a LaTeX \code{datetbl}.
+#'
+#' @param d Dataset including the information
+#' @param start_date Name of column denoting the year the position started or honor was awarded
+#' @param end_date Name of column denoting the year the position ended
+#' @param description Name of column describing the full description of the position/honor, including title, department, university, and location
+#' @param order Optional integer argument listing the order of entries
+#' @param trailing_dashes If end date is empty, should the start date have trailing dashes? Defaults to \code{TRUE}.
+#' 
+#' @return LaTex \code{datetbl}
+#' @export
+
+make_datetbl <- function(d, start_date, end_date, description, 
+                         order = NULL, trailing_dashes = TRUE) {
+  if(!is.null(order)) {
+    d <- d[order(d[["order"]]), ]
+  }
+  
+  pasted <- with(d, paste0(start_date, "--", end_date, " & ", 
+                             description, " \\\\"))
+  pasted <- gsub("NA ", " ", pasted)
+  
+  if(!trailing_dashes) {
+    pasted <- gsub("-- ", " ", pasted)
+  }
+  
+  cat("\\begin{datetbl}", pasted, "\\end{datetbl}", sep = "\n")
 }
 
