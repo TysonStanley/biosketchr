@@ -105,7 +105,9 @@ d %>%
 
 # Contribution to Science {-}
 
-1. Paragraph of contribution number 1. This should include a narrative about one of your main research lines. Below, cite up to four publications stemming from this contribution. Feel free to erase all of this filler text.
+\begin{enumerate}
+
+\item Paragraph of contribution number 1. This should include a narrative about one of your main research lines. Below, cite up to four publications stemming from this contribution. Feel free to erase all of this filler text.
 
 ```{r contribution_citations1}
 # replace these keys with your own
@@ -113,7 +115,7 @@ make_numbered_citations("RCoreTeam", "RStudio", "biosketchr", "nihbiosketch")
 ```
 
 
-2. Paragraph of contribution number 2. This should include a narrative about one of your main research lines. Below, cite up to four publications stemming from this contribution. Feel free to erase all of this filler text.
+\item Paragraph of contribution number 2. This should include a narrative about one of your main research lines. Below, cite up to four publications stemming from this contribution. Feel free to erase all of this filler text.
 
 ```{r contribution_citations2}
 # replace these keys with your own
@@ -124,5 +126,5 @@ make_numbered_citations("RCoreTeam", "RStudio", "biosketchr", "nihbiosketch")
 Can include more contributions like the ones above
 -->
 
-
+\end{enumerate}
 
