@@ -2,7 +2,7 @@
 
 .check_template <-function(template, file){
   if (template == "")
-    stop("Couldn't find template file for dissertateUSU", call. = FALSE)
+    stop("Couldn't find template file for biosketchr", call. = FALSE)
 }
 
 .check_pdf <- function(pdf){
