@@ -42,11 +42,20 @@ bibliographystyle: apalike
 ---
 
 ```{r global_options, include=FALSE}
+library(dplyr)
+library(biosketchr)
+
 ## This saves you from having to do this for every chunk
 knitr::opts_chunk$set(fig.path = 'figures/',
                       echo = FALSE, 
                       warning = FALSE, 
-                      message = FALSE)
+                      message = FALSE, 
+                      results = "asis")
+
+# load positions/honors data
+d <- readxl::read_xlsx(system.file("example-data", "positions-honors.xlsx", 
+                                   package = "biosketchr"))
+
 ```
 
 <!--
@@ -74,29 +83,27 @@ Your statement about your qualifications for the proposal goes here. Include up-
 # Positions and Honors {-}
 
 ## Positions and Employment {-}
-
-\begin{datetbl}
-1998--2000  & Fellow, Somewhere Neat \\
-2000--2002  & Lecturer, Department of Psychology, A University, Somewhere Cool \\
-2002--2005  & Assistant Research Professor, Department of Psychology, University State, Somewhere Fantastic \\
-2007--      & Associate Research Professor, Department of Psychology, University State, Somewhere Fantastic \\
-\end{datetbl}
+```{r positions}
+d %>% 
+  filter(section == "positions") %>% 
+  make_datetbl(start_date, end_date, description, order)
+```
 
 ## Other Experience and Professional Memberships {-}
 
-\begin{datetbl}
-2000--      & Member, American Psychological Association \\
-2000--      & Member, Gerontological Society of America \\
-\end{datetbl}
+```{r other_exp}
+d %>% 
+  filter(section == "other_exp") %>% 
+  make_datetbl(start_date, end_date, description, order)
+```
 
 ## Honors {-}
 
-\begin{datetbl}
-2003        & Outstanding Person, University State, Somewhere Fantastic \\
-2004        & Excellence in Teaching, University State, Somewhere Fantastic \\
-2009        & Award for Best of Something, A University, Somewhere Cool \\
-\end{datetbl}
-
+```{r honors}
+d %>% 
+  filter(section == "honors") %>% 
+  make_datetbl(start_date, end_date, description, order, FALSE)
+```
 
 # Contribution to Science {-}
 
