@@ -15,7 +15,7 @@ Provides the template and functions that make creating a Biosketch easier.
 
 Authors:
 \itemize{
-  \item Daniel Anderson
+  \item Daniel Anderson \email{daniela@uoregon.edu} (https://orcid.org/0000-0003-4699-4680)
 }
 
 }
