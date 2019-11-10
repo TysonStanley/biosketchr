@@ -56,3 +56,7 @@ feedback on any aspect that doesn’t work as expected.
 We also want to thank the
 [`rticles`](https://github.com/rstudio/rticles) package for showing how
 to create RMarkdown templates such as in `biosketchr`.
+
+Please note that the ‘biosketchr’ project is released with a
+[Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to
+this project, you agree to abide by its terms.
