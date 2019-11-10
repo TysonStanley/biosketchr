@@ -16,7 +16,6 @@ devtools::load_all()
 
 # `biosketchr` `v`r packageVersion("biosketchr")`` <img src="man/figures/logo.png" align="right" width="30%" height="30%"/>
 
-
 The goal of `biosketchr` is to make two aspects of creating a Biosketch better:
 
 1. Formatting of the biosketch is automatically done for you
@@ -50,7 +49,7 @@ When you `knit` this, it will produce a PDF file in the same folder that is form
 
 <img src="man/figures/pdf_output_example.png" align="center" width="50%" height="50%"/>
 
-Yay! Biosketching with RMarkdown!
+Enjoy biosketching with RMarkdown!
 
 
 ## Note

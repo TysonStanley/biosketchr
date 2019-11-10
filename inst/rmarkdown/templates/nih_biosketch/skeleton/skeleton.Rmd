@@ -59,7 +59,7 @@ d <- readxl::read_xlsx(system.file("example-data", "positions-honors.xlsx",
 ```
 
 <!--
-The structure of this skeleton should stay the same. Add your specifics :) Notably, \fullcite{} allows the full citation from a bib file entry (as far as I can tell there is no pandoc equivalent yet).
+The structure of this skeleton should stay the same. Add your specifics :)
 -->
 
 
@@ -67,15 +67,13 @@ The structure of this skeleton should stay the same. Add your specifics :) Notab
 
 \begin{statement}
 
-Your statement about your qualifications for the proposal goes here. Include up-to-four citations related to the statement (either using the `\bibentry` command as shown below with the appropriate key from the `.bib` file or manually entered). This can often include any previous products from collaborations between the research team that is relevant to the current proposal. Ultimately, this is a space to show that you are competent capable of completing the proposed project. Feel free to erase all of this filler text.
+Your statement about your qualifications for the proposal goes here. Include up-to-four citations related to the statement (either using the `make_numbered_citations()` function as shown below with the appropriate keys from the `.bib` file or manually entered). This can often include any previous products from collaborations between the research team that is relevant to the current proposal. Ultimately, this is a space to show that you are competent capable of completing the proposed project. Feel free to erase all of this filler text.
 
-  1. \bibentry{RCoreTeam}
-  
-  2. \bibentry{Rstudio}
-  
-  3. \bibentry{biosketchr}
-  
-  4. \bibentry{nihbiosketch}
+```{r statement_citations}
+# replace these keys with your own
+make_numbered_citations("RCoreTeam", "RStudio", "biosketchr", "nihbiosketch")
+```
+
 
 \end{statement}
 
@@ -108,17 +106,19 @@ d %>%
 # Contribution to Science {-}
 
 1. Paragraph of contribution number 1. This should include a narrative about one of your main research lines. Below, cite up to four publications stemming from this contribution. Feel free to erase all of this filler text.
-    1. \bibentry{RCoreTeam}
-    2. \bibentry{Rstudio}
-    3. \bibentry{biosketchr}
-    4. \bibentry{nihbiosketch}
+
+```{r contribution_citations1}
+# replace these keys with your own
+make_numbered_citations("RCoreTeam", "RStudio", "biosketchr", "nihbiosketch")
+```
 
 
 2. Paragraph of contribution number 2. This should include a narrative about one of your main research lines. Below, cite up to four publications stemming from this contribution. Feel free to erase all of this filler text.
-    1. \bibentry{RCoreTeam}
-    2. \bibentry{Rstudio}
-    3. \bibentry{biosketchr}
-    4. \bibentry{nihbiosketch}
+
+```{r contribution_citations2}
+# replace these keys with your own
+make_numbered_citations("RCoreTeam", "RStudio", "biosketchr", "nihbiosketch")
+```
 
 <!--
 Can include more contributions like the ones above
