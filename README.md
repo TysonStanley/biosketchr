@@ -3,6 +3,14 @@
 
 # `biosketchr` `v0.1.3` <img src="man/figures/logo.png" align="right" width="30%" height="30%"/>
 
+<!-- badges: start -->
+
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Build
+Status](https://travis-ci.com/TysonStanley/biosketchr.svg?branch=master)](https://travis-ci.com/TysonStanley/biosketchr)
+<!-- badges: end -->
+
 The goal of `biosketchr` is to make two aspects of creating a Biosketch
 better:
 

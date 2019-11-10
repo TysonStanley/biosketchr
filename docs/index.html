@@ -38,7 +38,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">biosketchr</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.2</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.3</span>
       </span>
     </div>
 
@@ -66,10 +66,12 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="biosketchr-v012-" class="section level1">
+<div id="biosketchr-v013-" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
-<a href="#biosketchr-v012-" class="anchor"></a><code>biosketchr</code> <code>v0.1.2</code> <img src="reference/figures/logo.png" align="right" width="30%" height="30%">
+<a href="#biosketchr-v013-" class="anchor"></a><code>biosketchr</code> <code>v0.1.3</code> <img src="reference/figures/logo.png" align="right" width="30%" height="30%">
 </h1></div>
+<!-- badges: start -->
+
 <p>The goal of <code>biosketchr</code> is to make two aspects of creating a Biosketch better:</p>
 <ol>
 <li>Formatting of the biosketch is automatically done for you</li>
@@ -79,7 +81,7 @@
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
 <p>You can install <code>biosketchr</code> with:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>remotes<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/remotes/man/install_github.html">install_github</a></span>(<span class="st">"tysonstanley/biosketchr"</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1">remotes<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/remotes/man/install_github.html">install_github</a></span>(<span class="st">"tysonstanley/biosketchr"</span>)</a></code></pre></div>
 </div>
 <div id="latex" class="section level2">
 <h2 class="hasAnchor">
@@ -96,13 +98,14 @@
 <p>This is where you’ll do all the editing, writing your statement, fill in education, etc. You’ll also want to edit the <code>yourbibfile.bib</code> file with your citations that you want to include in the biosketch.</p>
 <p>When you <code>knit</code> this, it will produce a PDF file in the same folder that is formatted like the appropriate biosketch. This PDF will look something like the following:</p>
 <p><img src="reference/figures/pdf_output_example.png" align="center" width="50%" height="50%"></p>
-<p>Yay! Biosketching with RMarkdown!</p>
+<p>Enjoy biosketching with RMarkdown!</p>
 </div>
 <div id="note" class="section level2">
 <h2 class="hasAnchor">
 <a href="#note" class="anchor"></a>Note</h2>
 <p>The package is still undergoing some development and we would love feedback on any aspect that doesn’t work as expected.</p>
 <p>We also want to thank the <a href="https://github.com/rstudio/rticles"><code>rticles</code></a> package for showing how to create RMarkdown templates such as in <code>biosketchr</code>.</p>
+<p>Please note that the ‘biosketchr’ project is released with a <a href="CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
 </div>
 </div>
   </div>
@@ -114,15 +117,28 @@
 <li><a href="https://www.r-project.org/Licenses/GPL-2">GPL-2</a></li>
 </ul>
 </div>
+<div class="community">
+<h2>Community</h2>
+<ul class="list-unstyled">
+<li><a href="CODE_OF_CONDUCT.html">Code of conduct</a></li>
+</ul>
+</div>
 <div class="developers">
 <h2>Developers</h2>
 <ul class="list-unstyled">
 <li>Tyson S. Barrett <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0002-2137-1391" target="orcid.widget"><img src="https://members.orcid.org/sites/default/files/vector_iD_icon.svg" class="orcid" alt="ORCID"></a> </li>
-<li>Daniel Anderson <br><small class="roles"> Author </small>  </li>
+<li>Daniel Anderson <br><small class="roles"> Author </small> <a href="https://orcid.org/https://orcid.org/0000-0003-4699-4680" target="orcid.widget"><img src="https://members.orcid.org/sites/default/files/vector_iD_icon.svg" class="orcid" alt="ORCID"></a> </li>
 </ul>
 </div>
 
-  </div>
+  <div class="dev-status">
+<h2>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://www.tidyverse.org/lifecycle/#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a></li>
+<li><a href="https://travis-ci.com/TysonStanley/biosketchr"><img src="https://travis-ci.com/TysonStanley/biosketchr.svg?branch=master" alt="Build Status"></a></li>
+</ul>
+</div>
+</div>
 </div>
 
 
