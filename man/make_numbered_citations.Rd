@@ -4,10 +4,12 @@
 \alias{make_numbered_citations}
 \title{Format Numbered Citations}
 \usage{
-make_numbered_citations(...)
+make_numbered_citations(..., NIH = TRUE)
 }
 \arguments{
 \item{...}{keys from the`.bib` file in order of appearance in biosketch}
+
+\item{NIH}{Is the biosketch being produced for NIH? Defaults to \code{TRUE} and is currently the only option.}
 }
 \value{
 LaTex \code{enumerated list}
