@@ -1,0 +1,86 @@
+---
+name: "Your Name"
+department: "Department"
+university: "Somewhere Great"
+email: "email"
+telephone: "number"
+preparation: 
+  - location: "University or Company"
+    field: "Your Field"
+    degree: "Your degree earned"
+    dates: "2000--2005"
+  - location: "University or Company"
+    field: "Your Field"
+    degree: "Your degree earned"  
+    dates: "2005--2008"
+  - location: "University or Company"
+    field: "Your Field"
+    degree: "Your degree earned"
+    dates: "2008--2012"
+output:
+  biosketchr::nsf_biosketch:
+    latex_engine: xelatex
+    keep_tex: yes
+bibliography: yourbibfile.bib
+bibliographystyle: apalike
+---
+
+```{r global_options, include=FALSE}
+library(biosketchr)
+
+## This saves you from having to do this for every chunk
+knitr::opts_chunk$set(fig.path = 'figures/',
+                      echo = FALSE, 
+                      warning = FALSE, 
+                      message = FALSE, 
+                      results = "asis")
+
+# load positions/honors data
+d <- readxl::read_xlsx(system.file("example-data", "appointments-nsf.xlsx", 
+                                   package = "biosketchr"))
+
+```
+
+<!--
+The structure of this skeleton should stay the same. Add your specifics :)
+-->
+
+
+## Appointments {-}
+
+```{r statement_citations}
+make_datetbl_nsf(d, start_date, end_date, position, location, order)
+```
+
+
+## Products {-}
+
+```{r contribution_citations1}
+# replace these keys with your own
+make_numbered_citations("RCoreTeam", "RStudio", "biosketchr", "nihbiosketch")
+```
+
+
+## Synergistic Activities {-}
+
+1. **Conference service**: Organized some really neat conference collaborating with the editor of a journal that I like. Feel free to erase all this filler text.
+
+2. **University service**: Baked cookies to raise money to help underrepresented college students. Feel free to erase all this filler text.
+
+3. **Community service**: Did some great stuff for the community. Feel free to erase all this filler text.
+
+4. **Mentoring**: Mentoring experience and awards. Feel free to erase all this filler text.
+
+5. **Teaching**: Teaching experience and style (open resources?). Feel free to erase all this filler text.
+
+<!-- can add more categories as needed -->
+
+
+## Collaborators \& Other Affiliations {-}
+
+1. **Collaborators and Co-Editors**: *University 1*: A list of names separated by semi-colons that I've collaborated with at University 1; *University 2*: A list of names separated by semi-colons that I've collaborated with at University 2
+
+2. **Graduate Advisers and Postdoctoral Sponsors**: *University 1*: A list of names separated by semi-colons that I've collaborated with at University 1
+
+<!-- can add more categories as needed -->
+

@@ -53,7 +53,7 @@ knitr::opts_chunk$set(fig.path = 'figures/',
                       results = "asis")
 
 # load positions/honors data
-d <- readxl::read_xlsx(system.file("example-data", "positions-honors.xlsx", 
+d <- readxl::read_xlsx(system.file("example-data", "positions-honors-nih.xlsx", 
                                    package = "biosketchr"))
 
 ```
@@ -79,7 +79,7 @@ make_numbered_citations("RCoreTeam", "RStudio", "biosketchr", "nihbiosketch")
 ```{r positions}
 d %>% 
   filter(section == "positions") %>% 
-  make_datetbl(start_date, end_date, description, order)
+  make_datetbl_nih(start_date, end_date, description, order)
 ```
 
 ## Other Experience and Professional Memberships {-}
@@ -87,7 +87,7 @@ d %>%
 ```{r other_exp}
 d %>% 
   filter(section == "other_exp") %>% 
-  make_datetbl(start_date, end_date, description, order)
+  make_datetbl_nih(start_date, end_date, description, order)
 ```
 
 ## Honors {-}
@@ -95,7 +95,7 @@ d %>%
 ```{r honors}
 d %>% 
   filter(section == "honors") %>% 
-  make_datetbl(start_date, end_date, description, order, FALSE)
+  make_datetbl_nih(start_date, end_date, description, order, FALSE)
 ```
 
 # Contribution to Science {-}

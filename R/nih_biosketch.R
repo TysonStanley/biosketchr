@@ -20,12 +20,6 @@
 #'   \item \code{output} Should be one of the formats from \code{biosketchr}
 #'   }
 #'
-#' @examples
-#'
-#' \dontrun{
-#' library(rmarkdown)
-#' draft("MyArticle.Rmd", template = "nih_biosketch", package = "biosketchr")
-#' }
 #'
 #' @import yaml
 #'
@@ -60,7 +54,7 @@ nih_biosketch <- function(..., highlight = NULL, citation_package = "none") {
   pdf
 }
 
-#' Format positions data into a table
+#' Format positions data into a table for NIH
 #'
 #' Transforms a standard R data frame into a LaTeX \code{datetbl}.
 #'
@@ -74,8 +68,8 @@ nih_biosketch <- function(..., highlight = NULL, citation_package = "none") {
 #' @return LaTex \code{datetbl}
 #' @export
 
-make_datetbl <- function(d, start_date, end_date, description, 
-                         order = NULL, trailing_dashes = TRUE) {
+make_datetbl_nih <- function(d, start_date, end_date, description, 
+                             order = NULL, trailing_dashes = TRUE) {
   if(!is.null(order)) {
     d <- d[order(d[["order"]]), ]
   }

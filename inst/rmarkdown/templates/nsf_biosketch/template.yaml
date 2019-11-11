@@ -1,0 +1,4 @@
+name: "NSF Biosketch"
+description: >
+ Template for creating an NSF biosketch.
+create_dir: true

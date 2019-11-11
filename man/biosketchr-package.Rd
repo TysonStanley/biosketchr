@@ -8,7 +8,8 @@
 \description{
 \if{html}{\figure{logo.png}{options: align='right'}}
 
-Provides the template and functions that make creating a Biosketch easier.
+Provides the template and functions that make creating a
+    Biosketch for NIH and NSF proposals easier.
 }
 \author{
 \strong{Maintainer}: Tyson S. Barrett \email{t.barrett@aggiemail.usu.edu} (0000-0002-2137-1391)

@@ -1,0 +1,130 @@
+% Template Adapted from:
+% 
+%     NSF Biographical Sketch: Dr. Theodore P. Pavlic
+%
+%     Copyright (c) 2013 by Theodore P. Pavlic
+%     All rights reserved.
+%
+% Dr. Theodore P. Pavlic is not responsible for any changes made herein
+
+\documentclass[svgnames,11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\renewcommand\thesection{(\alph{section})}
+\renewcommand\thesubsection{(\alph{subsection})}
+
+\usepackage{calc}
+
+\usepackage{lastpage}
+%\newcommand{\pageoflastpage}{Page {\thepage} of \pageref*{LastPage}}
+%\newcommand{\pageoflastpage}{{\thepage} of \pageref*{LastPage}}
+\newcommand{\pageoflastpage}{}
+
+% Redefine the plain pagestyle for the title page
+\makeatletter
+\let\oldps@plain\ps@plain
+\renewcommand{\ps@plain}{\oldps@plain%
+\renewcommand{\@evenfoot}{\hfil\pageoflastpage\hfil}%
+\renewcommand{\@oddfoot}{\@evenfoot}}
+\makeatother
+
+% Use fancy for non-title pages
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\cfoot{\pageoflastpage}
+\pagestyle{fancy}
+
+\usepackage{xspace}
+
+\usepackage[shortlabels]{enumitem}
+\usepackage{graphicx}
+\usepackage{varioref}
+\usepackage[%
+        colorlinks=true,urlcolor=,
+        pdfpagelabels=true,hypertexnames=true,
+        plainpages=false,naturalnames=true,
+        ]{hyperref}
+%
+\usepackage{url}
+\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+\newcommand\doi[1]{doi:\doilink{#1}}
+
+\makeatletter
+\newlength{\bibhang}
+\setlength{\bibhang}{1em}
+\newlength{\bibsep}
+ {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
+\newlist{bibsection}{itemize}{3}
+\setlist[bibsection]{label=,leftmargin={\bibhang+\widthof{[9]}},%
+        itemindent=-\bibhang,
+        itemsep=\bibsep,parsep=\z@,partopsep=0pt,
+        topsep=0pt}
+\newlist{bibenum}{enumerate}{3}
+\setlist[bibenum]{label=\textbf{\arabic*.},leftmargin={\bibhang+\widthof{[999]}},%
+        itemindent=-\bibhang,
+        itemsep=\bibsep,parsep=\z@,partopsep=0pt,
+        topsep=0pt}
+\let\oldendbibenum\endbibenum
+\def\endbibenum{\oldendbibenum\vspace{-.6\baselineskip}}
+\let\oldendbibsection\endbibsection
+\def\endbibsection{\oldendbibsection\vspace{-.6\baselineskip}}
+\makeatother
+
+\title{%
+        \vspace{-2\baselineskip}
+            \normalsize
+            Biographical Sketch\\
+            {\large\textbf{$name$}}\\
+            \vspace{0.5\baselineskip}
+            \hrule
+            \vspace{0.5\baselineskip}
+            $department$, $university$
+            e-mail: \href{mailto:$email$}{$email$},
+            tel: $telephone$
+        \vspace{-1.5ex}
+        }
+
+\newcommand{\ie}{i.e.\xspace}
+\newcommand{\eg}{e.g.\xspace}
+
+\usepackage{natbib}
+\usepackage{bibentry}
+\bibliographystyle{$bibliographystyle$}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+$preamble$
+
+
+\begin{document}
+
+
+$if(bibliography)$
+  \nobibliography{$for(bibliography)$$bibliography$$sep$,$endfor$}
+$endif$
+
+
+\maketitle
+\vspace{-4\baselineskip}
+
+
+\subsection{Professional Preparation}
+
+  $for(preparation)$
+      $preparation.location$; $preparation.field$; $preparation.degree$; $preparation.dates$ \\
+  $endif$
+
+
+
+$body$
+
+
+
+$for(include-after)$
+  $include-after$
+$endfor$
+
+
+\end{document}
