@@ -11,3 +11,7 @@
     stop("Something went wrong, possibly in the yaml. Does it have all the necessary components? ", call. = FALSE)
 }
 
+.check_4_cites_nih <- function(x){
+  if (length(x) > 4)
+    warning("Only 4 references are allowed in NIH biosketch.", call. = FALSE)
+}
