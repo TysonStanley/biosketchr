@@ -80,7 +80,7 @@ make_datetbl <- function(d, start_date, end_date, description,
     d <- d[order(d[["order"]]), ]
   }
   
-  description <- gsub("\\&", "\\\\&", description)
+  description <- gsub("\\&", "\\\\&", d[["description"]])
   pasted <- with(d, paste0(start_date, "--", end_date, " & ", 
                              description, " \\\\"))
   pasted <- gsub("NA ", " ", pasted)
@@ -98,25 +98,22 @@ make_datetbl <- function(d, start_date, end_date, description,
 #' Formats a list of keys into a LaTeX \code{enumerated list} of references.
 #'
 #' @param ... keys from the`.bib` file in order of appearance in biosketch
+#' @param NIH Is the biosketch being produced for NIH? Defaults to \code{TRUE} and is currently the only option.
 #' 
 #' @return LaTex \code{enumerated list}
 #' @export
 
-make_numbered_citations <- function(...) {
+make_numbered_citations <- function(..., NIH = TRUE) {
   
   keys <- list(...)
-  check_4_cites_nih(keys)
   
-  pasted <- vector("character")
-  for (key in keys){
-    pasted[key] <- paste0("  \\item \\bibentry{", key, "}")
+  if(NIH) {
+    .check_4_cites_nih(keys)
   }
   
+  pasted <- paste0("  \\item \\bibentry{", keys, "}")
+
   cat("\\begin{enumerate}", pasted, "\\end{enumerate}", sep = "\n")
 }
 
-check_4_cites_nih <- function(x){
-  if (length(x) > 4)
-    warning("Only 4 references are allowed in NIH biosketch.", call. = FALSE)
-}
 
