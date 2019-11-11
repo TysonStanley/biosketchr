@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# `biosketchr` `v0.1.3` <img src="man/figures/logo.png" align="right" width="30%" height="30%"/>
+# `biosketchr` `v0.1.4` <img src="man/figures/logo.png" align="right" width="30%" height="30%"/>
 
 <!-- badges: start -->
 
@@ -12,7 +12,8 @@ Status](https://travis-ci.com/TysonStanley/biosketchr.svg?branch=master)](https:
 <!-- badges: end -->
 
 The goal of `biosketchr` is to make two aspects of creating a Biosketch
-better:
+for either NIH (National Institutes of Health in the United States) or
+NSF (National Science Foundation in the United States) better:
 
 1.  Formatting of the biosketch is automatically done for you
 2.  The citations are automatically formatted and inserted in the
@@ -28,14 +29,21 @@ remotes::install_github("tysonstanley/biosketchr")
 
 ## LaTeX
 
+#### NIH Template
+
 The template was created by Paul M. Magwene and can be found at:
 [github.com/pmagwene/latex-nihbiosketch](https://github.com/pmagwene/latex-nihbiosketch).
 
+#### NSF Template
+
+The template was created by Theodore P. Pavlic and can be found
+[here](http://phaseportrait.blogspot.co.uk/2013/02/latex-template-for-nsf-style.html).
+
 ## Example
 
-To start, you’ll want to select the appropriate template (currently only
-the NIH one) from the `biosketchr` package. This will create a folder
-with whatever name you choose that contains an `Rmd` file, the
+To start, you’ll want to select the appropriate template (for this
+example, the NIH one) from the `biosketchr` package. This will create a
+folder with whatever name you choose that contains an `Rmd` file, the
 appropriate `.cls` file, and a `.bib`
 file.
 
@@ -56,6 +64,9 @@ something like the
 following:
 
 <img src="man/figures/pdf_output_example.png" align="center" width="50%" height="50%"/>
+
+A very similar process works for the NSF template, with slighty
+different fields in the skeleton RMarkdown file.
 
 Enjoy biosketching with RMarkdown\!
 
