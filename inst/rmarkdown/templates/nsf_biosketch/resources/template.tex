@@ -51,26 +51,26 @@
 \newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
 \newcommand\doi[1]{doi:\doilink{#1}}
 
-\makeatletter
-\newlength{\bibhang}
-\setlength{\bibhang}{1em}
-\newlength{\bibsep}
- {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
-\newlist{bibsection}{itemize}{3}
-\setlist[bibsection]{label=,leftmargin={\bibhang+\widthof{[9]}},%
-        itemindent=-\bibhang,
-        itemsep=\bibsep,parsep=\z@,partopsep=0pt,
-        topsep=0pt}
-\newlist{bibenum}{enumerate}{3}
-\setlist[bibenum]{label=\textbf{\arabic*.},leftmargin={\bibhang+\widthof{[999]}},%
-        itemindent=-\bibhang,
-        itemsep=\bibsep,parsep=\z@,partopsep=0pt,
-        topsep=0pt}
-\let\oldendbibenum\endbibenum
-\def\endbibenum{\oldendbibenum\vspace{-.6\baselineskip}}
-\let\oldendbibsection\endbibsection
-\def\endbibsection{\oldendbibsection\vspace{-.6\baselineskip}}
-\makeatother
+% \makeatletter
+% \newlength{\bibhang}
+% \setlength{\bibhang}{1em}
+% \newlength{\bibsep}
+%  {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
+% \newlist{bibsection}{itemize}{3}
+% \setlist[bibsection]{label=,leftmargin={\bibhang+\widthof{[9]}},%
+%         itemindent=-\bibhang,
+%         itemsep=\bibsep,parsep=\z@,partopsep=0pt,
+%         topsep=0pt}
+% \newlist{bibenum}{enumerate}{3}
+% \setlist[bibenum]{label=\textbf{\arabic*.},leftmargin={\bibhang+\widthof{[999]}},%
+%         itemindent=-\bibhang,
+%         itemsep=\bibsep,parsep=\z@,partopsep=0pt,
+%         topsep=0pt}
+% \let\oldendbibenum\endbibenum
+% \def\endbibenum{\oldendbibenum\vspace{-.6\baselineskip}}
+% \let\oldendbibsection\endbibsection
+% \def\endbibsection{\oldendbibsection\vspace{-.6\baselineskip}}
+% \makeatother
 
 \title{%
         \vspace{-2\baselineskip}
