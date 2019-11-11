@@ -80,6 +80,7 @@ make_datetbl <- function(d, start_date, end_date, description,
     d <- d[order(d[["order"]]), ]
   }
   
+  description <- gsub("\\&", "\\\\&", description)
   pasted <- with(d, paste0(start_date, "--", end_date, " & ", 
                              description, " \\\\"))
   pasted <- gsub("NA ", " ", pasted)
