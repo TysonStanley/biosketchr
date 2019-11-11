@@ -46,14 +46,14 @@ The structure of this skeleton should stay the same. Add your specifics :)
 -->
 
 
-## Appointments {-}
+## Appointments
 
 ```{r statement_citations}
 make_datetbl_nsf(d, start_date, end_date, position, location, order)
 ```
 
 
-## Products {-}
+## Products
 
 ```{r contribution_citations1}
 # replace these keys with your own
@@ -61,7 +61,7 @@ make_numbered_citations("RCoreTeam", "RStudio", "biosketchr", "nihbiosketch")
 ```
 
 
-## Synergistic Activities {-}
+## Synergistic Activities
 
 1. **Conference service**: Organized some really neat conference collaborating with the editor of a journal that I like. Feel free to erase all this filler text.
 
@@ -76,7 +76,7 @@ make_numbered_citations("RCoreTeam", "RStudio", "biosketchr", "nihbiosketch")
 <!-- can add more categories as needed -->
 
 
-## Collaborators \& Other Affiliations {-}
+## Collaborators \& Other Affiliations
 
 1. **Collaborators and Co-Editors**: *University 1*: A list of names separated by semi-colons that I've collaborated with at University 1; *University 2*: A list of names separated by semi-colons that I've collaborated with at University 2
 
