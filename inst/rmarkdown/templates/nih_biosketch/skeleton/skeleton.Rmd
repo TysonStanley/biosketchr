@@ -65,17 +65,12 @@ The structure of this skeleton should stay the same. Add your specifics :)
 
 # Personal Statement {-}
 
-\begin{statement}
-
 Your statement about your qualifications for the proposal goes here. Include up-to-four citations related to the statement (either using the `make_numbered_citations()` function as shown below with the appropriate keys from the `.bib` file or manually entered). This can often include any previous products from collaborations between the research team that is relevant to the current proposal. Ultimately, this is a space to show that you are competent capable of completing the proposed project. Feel free to erase all of this filler text.
 
 ```{r statement_citations}
 # replace these keys with your own
 make_numbered_citations("RCoreTeam", "RStudio", "biosketchr", "nihbiosketch")
 ```
-
-
-\end{statement}
 
 
 # Positions and Honors {-}
@@ -122,10 +117,14 @@ make_numbered_citations("RCoreTeam", "RStudio", "biosketchr", "nihbiosketch")
 make_numbered_citations("RCoreTeam", "RStudio", "biosketchr", "nihbiosketch")
 ```
 
-
-
 \end{enumerate}
 
 <!--
-Can include more contributions like the ones above, before the `\end{enumerate}`
+Can include additional contributions like the ones above, starting each with
+\item, followed by a short description, follwed by a chunk using 
+`make_numbered_citations`. Make sure these all appear before `end{enumerate}`
 -->
+
+
+
+
