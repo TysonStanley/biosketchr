@@ -19,6 +19,7 @@ devtools::load_all()
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![Build Status](https://travis-ci.com/TysonStanley/biosketchr.svg?branch=master)](https://travis-ci.com/TysonStanley/biosketchr)
+[![R-CMD-check](https://github.com/TysonStanley/biosketchr/workflows/R-CMD-check/badge.svg)](https://github.com/TysonStanley/biosketchr/actions)
 <!-- badges: end -->
 
 
